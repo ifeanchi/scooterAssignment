@@ -1,0 +1,52 @@
+```
+OOP
+```
+## User Stories (Use Cases)
+* As an {X}, I want to {Y}, by {Z}
+X == Kind of user
+Y == Action
+Z == Behavior
+
+* As a User, I want to be able to login into scooter app, by entering my username or phone number and password
+* As a User, I want to be able to select a scooter, by entering my scooter id
+* As a User, I want to be able to rent a scooter, by entering my driver's id
+* As a User, I want to be able to unlock a scooter, by selecting "unlock"
+* As a User, I want to be able to lock a scooter, by selecting "endRide"
+
+
+## Class Diagram (Pseudo-OOP)
+
+```
+class Scooter {
+	
+	id: INTEGER
+	location: STRING
+    batterLevel: INTEGER
+	authenticateUser()
+	unlock()
+    endRide()
+	showAmountAfterService()
+    indicateBatteryLow()
+	
+}
+class User {
+	id : INTEGER
+    age: INTEGER
+	name : STRING
+	address: STRING
+    createNewScooterAcc()
+	rentScooter()
+	returnScooter()
+    logIntoApp()
+    payForScooterservice()
+    reportScooterDamage()
+}
+
+class ScooterChargeStation {
+    location: STRING
+    capacity: INTEGER
+    receiveDamagedScooter()
+    repairDamagedScooter()
+    chargeScooter()
+    pickUpDamagedScooter()
+}
